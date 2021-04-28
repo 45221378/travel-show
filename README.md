@@ -6,25 +6,39 @@ ps: 橡皮擦功能比较复杂，而且目前的实现方案就是用白色的�
 
 ###### 思路
 1. 打开弹框  
-``` this.showImg = true; ```
+``` 
+this.showImg = true;  
+```
 
 2. 初始化canvas,即初始化fabric  
-``` this.initCanvas() ```
+``` 
+this.initCanvas()  
+```
 
 3. 清除画布  
-``` this.canvas.clear() ```
+``` 
+this.canvas.clear()  
+```
 
 4. 压缩图片  
-``` this.pressImg() ```
+``` 
+this.pressImg()  
+```
 
 5. 计算图片大小，位置  
-``` this.resetImg() ```
+``` 
+this.resetImg()   
+```
 
 6. 导入图片到画布  
-``` this.imgToCanvas(); ```
+``` 
+this.imgToCanvas();   
+```
 
 7. 根据img计算出的precent,得出canvas的情况  
-``` this.mathPrecent() ```
+```
+this.mathPrecent()   
+```
 
 8. 设置画笔大小,设置画笔颜色      
 ```
@@ -40,7 +54,9 @@ canvas.on("mouse:move", (options) => {}）
 ```
 
 10. drawing()事件，在mouse:move里面进行监听  
-``` 利用switch    beack，把画画的随意画，画矩形，写文字逻辑都写入。```
+``` 
+利用switch    beack，把画画的随意画，画矩形，写文字逻辑都写入。  
+```
 
 11. 删除操作，利用插件暴露api进行删除。参考上方给出文档  
 ```
