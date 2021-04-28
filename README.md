@@ -6,6 +6,7 @@ ps: 橡皮擦功能比较复杂，而且目前的实现方案就是用白色的�
 
 ###### 思路
 1. 打开弹框
+---
 ``` this.showImg = true; ```
 
 2. 初始化canvas,即初始化fabric
@@ -26,7 +27,7 @@ ps: 橡皮擦功能比较复杂，而且目前的实现方案就是用白色的�
 7. 根据img计算出的precent,得出canvas的情况
 ``` this.mathPrecent() ```
 
-8. 设置画笔大小,设置画笔颜色
+8. 设置画笔大小,设置画笔颜色  
 (```)
 this.canvas.freeDrawingBrush.color = this.textColor;
 this.canvas.freeDrawingBrush.width = this.brushWidth;
