@@ -27,26 +27,26 @@ ps: 橡皮擦功能比较复杂，而且目前的实现方案就是用白色的�
 ``` this.mathPrecent() ```
 
 8. 设置画笔大小,设置画笔颜色      
-(```)
-this.canvas.freeDrawingBrush.color = this.textColor;
-this.canvas.freeDrawingBrush.width = this.brushWidth;
-(```)
+```
+this.canvas.freeDrawingBrush.color = this.textColor;  
+this.canvas.freeDrawingBrush.width = this.brushWidth;  
+```
 
 9. 监听 canvas 事件，绑定画板事件  
-(```)
-canvas.on("mouse:down", (options) => {}）
-canvas.on("mouse:up", (options) => {}）
-canvas.on("mouse:move", (options) => {}）
-(```)
+```
+canvas.on("mouse:down", (options) => {}）    
+canvas.on("mouse:up", (options) => {}）   
+canvas.on("mouse:move", (options) => {}）  
+```
 
 10. drawing()事件，在mouse:move里面进行监听  
 ``` 利用switch    beack，把画画的随意画，画矩形，写文字逻辑都写入。```
 
 11. 删除操作，利用插件暴露api进行删除。参考上方给出文档  
-(```)
-this.canvas.remove(e.target);
-this.canvas.renderAll();
-(```)
+```
+this.canvas.remove(e.target);  
+this.canvas.renderAll();  
+```
 
 12. 批改完成后，把图片转化为base64的数据，并发送数据与后端进行交互  
 
